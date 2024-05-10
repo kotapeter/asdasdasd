@@ -1,0 +1,17 @@
+name: Test GH action
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sleep
+        run: sleep 10 && echo "Hello, world!"
+      - name: Echo
+        run: echo "Hello, world!"
+      - name: Fail or not
+        run: exit $((RANDOM % 2))
