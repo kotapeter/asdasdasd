@@ -1,0 +1,16 @@
+name: Test2 GH action
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sleep
+        run: sleep 1
+      - name: Echo
+        run: echo "Hello, world2!"
+
