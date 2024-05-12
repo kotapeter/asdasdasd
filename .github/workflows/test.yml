@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Sleep
-        run: sleep 1
+        run: sleep 2
       - name: Echo
         run: echo "Hello, world!"
       - name: Fail or not
