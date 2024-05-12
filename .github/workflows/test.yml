@@ -12,6 +12,6 @@ jobs:
       - name: Sleep
         run: sleep 1
       - name: Echo
-        run: echo "Hello, world!"
+        run: echo "Hello, world1!"
       - name: Fail or not
         run: exit $((RANDOM % 2))
